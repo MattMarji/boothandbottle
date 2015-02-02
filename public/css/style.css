@@ -1,0 +1,176 @@
+*
+{
+	padding:0;
+	margin:0;
+	outline:0;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue.otf');
+}
+
+.body_background
+{
+    background-color: #fffff;
+}
+
+img#logo
+{
+    margin-top: 120px;
+}
+
+.middle
+{   
+    text-align: center;
+}
+
+hr
+{
+    width: 60%;
+    height:1px; 
+    border:none; 
+    color:#e0e0e0; 
+    background-color:#e0e0e0; 
+    width:60%; 
+    text-align:center; 
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo_text
+{
+    align-content: center;
+    font-family:'BebasNeue';
+    font-size: 30px;
+}
+
+.social_small
+{
+    width:5%; 
+    height:5%;
+}
+
+.social_large
+{
+    width:8%; 
+    height:8%; 
+    margin-left: 40px; 
+    margin-right: 40px;
+}
+
+.img-transition {
+    -webkit-animation: fadein 3.5s; /* Safari and Chrome */
+    -moz-animation: fadein 3.5s; /* Firefox */
+    -ms-animation: fadein 3.5s; /* Internet Explorer */
+    -o-animation: fadein 3.5s; /* Opera */
+    animation: fadein 3.5s;
+}
+    
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+/*================================Responsive Design=====================================*/
+
+
+@media only screen and (max-width: 479px) {
+
+    .social_small
+{
+    width:12%; 
+    height:12%;
+}
+
+.social_large
+{
+    width:18%; 
+    height:18%; 
+    margin-left: 40px; 
+    margin-right: 40px;
+}
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px), only screen and (min-device-width: 480px) and (max-device-width: 767px){
+
+    .social_small
+{
+    width:12%; 
+    height:12%;
+}
+
+.social_large
+{
+    width:18%; 
+    height:18%; 
+    margin-left: 40px; 
+    margin-right: 40px;
+}    
+    
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+
+    .social_small
+{
+    width:12%; 
+    height:12%;
+}
+
+.social_large
+{
+    width:18%; 
+    height:18%; 
+    margin-left: 40px; 
+    margin-right: 40px;
+}
+    
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1119px){
+
+
+
+
+}
+
+@media only screen and (min-width: 1120px) {
+
+
+
+
+}
+
+
+
