@@ -25,6 +25,12 @@ img#logo
     text-align: center;
 }
 
+.image_logo
+{
+    width:30%;
+    height:30%;
+}
+
 hr
 {
     width: 60%;
@@ -99,9 +105,9 @@ hr
 /*================================Responsive Design=====================================*/
 
 
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width:100px) and (max-width: 478px) {
 
-    .social_small
+.social_small
 {
     width:12%; 
     height:12%;
@@ -113,6 +119,36 @@ hr
     height:18%; 
     margin-left: 40px; 
     margin-right: 40px;
+}
+    
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
+    
+}
+
+@media only screen and (max-width: 479px) {
+
+.social_small
+{
+    width:12%; 
+    height:12%;
+}
+
+.social_large
+{
+    width:18%; 
+    height:18%; 
+    margin-left: 40px; 
+    margin-right: 40px;
+}
+    
+.image_logo
+{
+    width:40%;
+    height:40%;
 }
 
 }
@@ -132,7 +168,13 @@ hr
     height:18%; 
     margin-left: 40px; 
     margin-right: 40px;
-}    
+} 
+    
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
     
 }
 
@@ -153,22 +195,33 @@ hr
     margin-left: 40px; 
     margin-right: 40px;
 }
-    
+   
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
 
 }
 
 
 @media only screen and (min-width: 992px) and (max-width: 1119px){
 
-
-
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
 
 }
 
 @media only screen and (min-width: 1120px) {
 
-
-
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
 
 }
 
