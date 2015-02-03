@@ -8,15 +8,26 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59293308-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </head>
-    
+
 <body class="body_background">
-    
+
     <div id="logo" class="middle">
         <!-- This div will host the logo. -->
         <a href=""><img id="logo" class="logo_image" src="images/boothandbottle_logo.jpg" alt="booth and bottle"></a>
     </div>
-    
+
     <div id="logo_text">
         <h3 align="middle" class="logo_text" id="slogan">Choose your venue. Reserve your booth. </br>Get back to the party. </br></br>Coming soon.</h3>
     </div>
@@ -28,84 +39,84 @@
         <div class="col-md-3">
 
         </div>
-        
+
         <div class="col-xs-4 col-md-2">
-            <a href="#" class="thumbnail img-transition">
+            <a href="" id="70-down_logo" class="thumbnail img-transition">
             <img src="images/70-down.jpg" style="width:80%; height:80%;" class="img-responsive" alt="booth and bottle 70-down">
             </a>
         </div>
-        
+
         <div class="col-xs-4 col-md-2">
-            <a href="#" class="thumbnail img-transition">
+            <a href="" id="bloke_logo" class="thumbnail img-transition">
             <img src="images/Bloke-logo.jpg" style="width:80%; height:80%;" class="img-responsive" alt="booth and bottle bloke">
             </a>
         </div>
-        
+
         <div class="col-xs-4 col-md-2">
-            <a href="#" class="thumbnail img-transition">
+            <a href="" id="efs_logo" class="thumbnail img-transition">
             <img src="images/efs-logo.jpg" style="width:80%; height:80%;" class="img-responsive" alt="booth and bottle efs">
             </a>
         </div>
-        
+
         <div class="col-md-3">
 
         </div>
     </div>
 
     <div class="row">
-        
+
         <div class="col-md-3">
 
         </div>
-        
+
         <div class="col-xs-4 col-md-2">
-            <a href="#" class="thumbnail img-transition">
-            <img src="images/fiction-logo.jpg" style="width:80%; height:80%;" alt="booth and bottle maison">
+            <a href="" id="fiction_logo" class="thumbnail img-transition">
+            <img src="images/fiction-logo.jpg" style="width:80%; height:80%;" alt="booth and bottle fiction">
             </a>
         </div>
 
         <div class="col-xs-4 col-md-2">
-            <a href="#" class="thumbnail img-transition">
-            <img src="images/gravity-sound-bar-logo.jpg" style="width:80%; height:80%;" alt="booth and bottle maison">
+            <a href="" id="gravity_logo" class="thumbnail img-transition">
+            <img src="images/gravity-sound-bar-logo.jpg" style="width:80%; height:80%;" alt="booth and bottle gravity">
             </a>
         </div>
-        
+
         <div class="col-xs-4 col-md-2">
-            <a href="#" class="thumbnail img-transition">
+            <a href="" id="maison_logo" class="thumbnail img-transition">
             <img src="images/maison-mercer-logo.jpg" style="width:80%; height:80%;" alt="booth and bottle maison">
             </a>
         </div>
 
-        
+
         <div class="col-md-3">
 
         </div>
     </div>
 
     <div class="row">
-        
+
         <div class="col-md-3">
 
         </div>
-        
+
         <div class="col-xs-4 col-md-2">
-            <a href="#" class="thumbnail img-transition">
+            <a href="" id="hoxton_logo" class="thumbnail img-transition">
             <img src="images/the-hoxton-logo.jpg" style="width:80%; height:80%;" alt="booth and bottle hoxton">
             </a>
         </div>
 
         <div class="col-xs-4 col-md-2">
-            <a href="#" class="thumbnail img-transition">
+            <a href="" id="thompson_logo" class="thumbnail img-transition">
             <img src="images/thompson-logo.jpg" style="width:80%; height:80%;" alt="booth and bottle thompson">
             </a>
         </div>
 
         <div class="col-xs-4 col-md-2">
-            <a href="#" class="thumbnail img-transition">
-            <img src="images/wild-flower.jpg" style="width:80%; height:80%;" alt="booth and bottle hoxton">
+            <a href="" id="wildflower_logo" class="thumbnail img-transition">
+            <img src="images/wild-flower.jpg" style="width:80%; height:80%;" alt="booth and bottle wildflower">
             </a>
         </div>
-        
+
         <div class="col-md-3">
 
         </div>
@@ -114,7 +125,7 @@
     </br>
     </br>
 
-    
+
     <div class="middle">
 
         <a target="_blank" href="https://www.instagram.com/boothandbottle">
@@ -130,14 +141,50 @@
         </a>
 
     </div>
-    
+
     </br>
     </br>
 
+<div class="modal fade" id="formModal" role="dialog" aria-hidden="true">
+    <div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h2 class="panel-title modal_title_font" id="form_modal_title">Book with Booth&amp;Bottle!</h2>
+			 			</div>
+                            <div class="panel-body">
+                                <h3 class="special_font">Leave us your info. </br>One of our ambassadors will connect with you today to book your night out!</h3>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" name="Name" id="full_name" class="form-control input-sm" placeholder="Full Name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="tel" name="phone_number" id="phone_number" class="form-control input-sm" placeholder="Phone Number">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea name="message_box" id="message_box" class="form-control" placeholder="Optional Message"></textarea>
+                                    </div>
+                            </div>
+			    			<input type="submit" value="Let's Connect and Book." class="btn btn-info btn-block modal_btn_font">
+
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+</div>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="//ajax.cdnjs.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
-    
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>

@@ -52,6 +52,25 @@ hr
     font-size: 30px;
 }
 
+.modal_title_font
+{
+    font-family:'BebasNeue';
+    font-size: 30px;
+    font-stretch:extra-expanded;
+}
+
+.modal_btn_font
+{
+    font-family:'BebasNeue';
+    font-size: 20px;
+    font-stretch:extra-expanded;
+}
+
+.special_font
+{
+    font-family:'BebasNeue';
+}
+
 .social_small
 {
     width:5%; 
@@ -64,6 +83,16 @@ hr
     height:8%; 
     margin-left: 40px; 
     margin-right: 40px;
+}
+
+
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
 }
 
 .img-transition {
