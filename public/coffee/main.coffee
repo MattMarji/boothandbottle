@@ -19,10 +19,14 @@ form_validation = (name, email) ->
   if (name == "")
     $('#formModal').find('#error_name').text("Please enter your name.")
     return false
+  else
+    $('#formModal').find('#error_name').text("")
 
   if (email == "")
     $('#formModal').find('#error_email').text("Please enter your email address.")
     return false
+  else
+    $('#formModal').find('#error_email').text("")
 
   re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -31,10 +35,9 @@ form_validation = (name, email) ->
   if (!isValidEmail)
     $('#formModal').find('#error_email').text("Please enter a vaild email address.")
     return false
+  else
+    $('#formModal').find('#error_email').text("")
 
-  # Clear error fields before returning.
-  $('#formModal').find('#error_email').text("")
-  $('#formModal').find('#error_name').text("")
   return true
 
 $(document).ready(() ->
@@ -149,9 +152,8 @@ $(document).ready(() ->
   ##### EVENT HANDLER FOR HIDING INFO MODAL ON TIMEOUT ###
   $('#infoModal').on('show.bs.modal', (event) ->
     setTimeout((() ->
-      $('#infoModal').modal('hide')), 2000)
-
+      $('#infoModal').modal('hide')), 3000)
   )
-
+  #######################################################
 
 )

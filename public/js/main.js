@@ -20,19 +20,23 @@
     if (name === "") {
       $('#formModal').find('#error_name').text("Please enter your name.");
       return false;
+    } else {
+      $('#formModal').find('#error_name').text("");
     }
     if (email === "") {
       $('#formModal').find('#error_email').text("Please enter your email address.");
       return false;
+    } else {
+      $('#formModal').find('#error_email').text("");
     }
     re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     isValidEmail = re.test(email);
     if (!isValidEmail) {
       $('#formModal').find('#error_email').text("Please enter a vaild email address.");
       return false;
+    } else {
+      $('#formModal').find('#error_email').text("");
     }
-    $('#formModal').find('#error_email').text("");
-    $('#formModal').find('#error_name').text("");
     return true;
   };
 
@@ -111,7 +115,7 @@
     return $('#infoModal').on('show.bs.modal', function(event) {
       return setTimeout((function() {
         return $('#infoModal').modal('hide');
-      }), 2000);
+      }), 3000);
     });
   });
 
