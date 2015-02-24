@@ -50,6 +50,12 @@ $(document).ready(() ->
     show_form("70 DOWN")
   )
 
+  $('a#1305duwest_logo').on('click', (event) ->
+    event.preventDefault()
+
+    show_form("1305 DUWEST")
+  )
+
   $('a#bloke_logo').on('click', (event) ->
     event.preventDefault()
 
@@ -78,6 +84,12 @@ $(document).ready(() ->
     event.preventDefault()
 
     show_form("MAISON MERCER")
+  )
+
+  $('a#stori_logo').on('click', (event) ->
+    event.preventDefault()
+
+    show_form("STORI APERITIVO BAR")
   )
 
   $('a#hoxton_logo').on('click', (event) ->

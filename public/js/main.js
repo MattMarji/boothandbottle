@@ -45,6 +45,10 @@
       event.preventDefault();
       return show_form("70 DOWN");
     });
+    $('a#1305duwest_logo').on('click', function(event) {
+      event.preventDefault();
+      return show_form("1305 DUWEST");
+    });
     $('a#bloke_logo').on('click', function(event) {
       event.preventDefault();
       return show_form("BLOKE & 4TH");
@@ -64,6 +68,10 @@
     $('a#maison_logo').on('click', function(event) {
       event.preventDefault();
       return show_form("MAISON MERCER");
+    });
+    $('a#stori_logo').on('click', function(event) {
+      event.preventDefault();
+      return show_form("STORI APERITIVO BAR");
     });
     $('a#hoxton_logo').on('click', function(event) {
       event.preventDefault();
