@@ -81,6 +81,10 @@
       event.preventDefault();
       return show_form("THOMPSON TORONTO");
     });
+    $('a#uniun_logo').on('click', function(event) {
+      event.preventDefault();
+      return show_form("UNIUN");
+    });
     $('a#wildflower_logo').on('click', function(event) {
       event.preventDefault();
       return show_form("WILDFLOWER");

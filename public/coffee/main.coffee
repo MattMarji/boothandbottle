@@ -104,6 +104,12 @@ $(document).ready(() ->
     show_form("THOMPSON TORONTO")
   )
 
+  $('a#uniun_logo').on('click', (event) ->
+    event.preventDefault()
+
+    show_form("UNIUN")
+  )
+
   $('a#wildflower_logo').on('click', (event) ->
     event.preventDefault()
 
