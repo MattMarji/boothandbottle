@@ -91,6 +91,12 @@ $(document).ready(() ->
 
     show_form("STORI APERITIVO BAR")
   )
+  
+  $('a#tattoo_logo').on('click', (event) ->
+    event.preventDefault()
+
+    show_form("TATTOO ROCK PARLOUR")
+  )
 
   $('a#hoxton_logo').on('click', (event) ->
     event.preventDefault()

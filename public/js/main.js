@@ -73,6 +73,10 @@
       event.preventDefault();
       return show_form("STORI APERITIVO BAR");
     });
+    $('a#tattoo_logo').on('click', function(event) {
+      event.preventDefault();
+      return show_form("TATTOO ROCK PARLOUR");
+    });
     $('a#hoxton_logo').on('click', function(event) {
       event.preventDefault();
       return show_form("THE HOXTON");
