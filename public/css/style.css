@@ -45,6 +45,40 @@ hr
     margin-bottom: 20px;
 }
 
+.first_field
+{
+    width:210px!important;
+    margin:0 16px 0 0px;
+}
+
+.last_field
+{
+    width:395px!important;
+}
+
+.second_field
+{
+    width:295px!important;
+}
+
+.input_field
+{
+    height:48px;
+    border:1px solid #e7eaee;
+    padding:0px 19px!important;
+    border-radius:5px;
+    font-family: 'BebasNeue';
+    font-weight:bold;
+    color:#212425;
+    font-size:18px;
+}
+
+.btn-success, .btn-success:hover {
+  color: #fff;
+  background-color: #0053ff;
+  border-color: #4cae4c;
+}
+
 .logo_text
 {
     align-content: center;
