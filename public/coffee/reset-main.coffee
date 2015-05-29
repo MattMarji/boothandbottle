@@ -8,15 +8,19 @@ validateToken = (token) ->
   callback = validated
 
   $.ajax({
-    url: PARTNER_API_LINK + "/partners/v1/token/reset"
+    url: "https://booth-api.herokuapp.com/validate_token"
     crossDomain: "true"
-    type:"GET"
-    beforeSend: (request) ->
-      request.setRequestHeader('Authorization', 'Basic ' + btoa(':'+ token))
+    dataType: "json"
+    type: "POST"
+    data:
+      reset_password_token: token
     success: (data) ->
+      console.log("SUCCESSFUL TOKEN VALIDATION")
       window.isValid = true
       callback()
     error: (xhr, status, error) ->
+      console.log("FAILED TOKEN VALIDATION")
+      $('#invalid').fadeIn()
       window.isValid = false
   })
 
@@ -27,7 +31,7 @@ validated = () ->
 
 
 $(document).ready(() ->
-  
+
   pattern = Trianglify({
     height: 3000,
     width: 3000,
@@ -37,14 +41,14 @@ $(document).ready(() ->
   document.getElementById("body_background").style.backgroundImage = "url('images/background.png')";
 
   # By default do not show this page...
-  #$('#reset').hide()
+  $('#reset').hide()
+  $('#invalid').hide()
 
   # GET TOKEN
   token = getToken()
 
-  console.log(token)
   # Validate the token before doing anything else...
-  #validateToken(token)
+  validateToken(token)
 
 
   # If the token is valid, and the user resets w/ a
@@ -58,21 +62,21 @@ $(document).ready(() ->
     $('#reset_password_error').text("")
 
     event.preventDefault();
-    admin_token = token
-
+    reset_token = token
 
     $.ajax({
-      url: "/partners/v1/token/reset"
+      url: "https://booth-api.herokuapp.com/password_reset"
       crossDomain: "true"
       type: "POST"
       data:
         password: $('#password1').val()
+        reset_password_token: reset_token
       success: (data) ->
-
+        console.log("SUCCESS!!")
         # Redirect the user now...
-        setTimeout((() ->
-          window.location.replace('index.html')
-          success_modal.$el.modal('hide')), 3000)
+        #setTimeout((() ->
+        #  window.location.replace('index.html')
+        #  success_modal.$el.modal('hide')), 3000)
 
       error: (data) ->
         $('#reset_password_error').text("Could not change your password. Please try again.")
