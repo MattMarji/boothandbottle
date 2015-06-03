@@ -48,7 +48,7 @@ $(document).ready(() ->
   #  cell_size: 40}
   #)
 
-  document.getElementById("body_background").style.backgroundImage = "url('images/background.png')";
+  #document.getElementById("body_background").style.backgroundImage = "url('images/background.png')";
 
   ########### EVENT HANDLERS FOR VENUES ############
 
