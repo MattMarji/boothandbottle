@@ -42,6 +42,14 @@ form_validation = (name, email) ->
 
 $(document).ready(() ->
 
+  #pattern = Trianglify({
+  #  height: 3000,
+  #  width: 3000,
+  #  cell_size: 40}
+  #)
+
+  #document.getElementById("body_background").style.backgroundImage = "url('images/background.png')";
+
   ########### EVENT HANDLERS FOR VENUES ############
 
   $('a#70-down_logo').on('click', (event) ->
