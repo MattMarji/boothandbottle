@@ -50,7 +50,6 @@ $(document).ready(() ->
   # Validate the token before doing anything else...
   validateToken(token)
 
-
   # If the token is valid, and the user resets w/ a
   # valid password ...
 
@@ -72,11 +71,15 @@ $(document).ready(() ->
         password: $('#password1').val()
         reset_password_token: reset_token
       success: (data) ->
-        console.log("SUCCESS!!")
+        $('#success_message').fadeIn()
+        $('#password1').hide()
+        $('#password2').hide()
+        $('#reset_button').hide()
+        $('#reset_password_error').text("")
+
         # Redirect the user now...
-        #setTimeout((() ->
-        #  window.location.replace('index.html')
-        #  success_modal.$el.modal('hide')), 3000)
+        setTimeout((() ->
+          window.location.replace('index.html')), 4000)
 
       error: (data) ->
         $('#reset_password_error').text("Could not change your password. Please try again.")
