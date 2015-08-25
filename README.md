@@ -1,2 +1,5 @@
-# boothandbottle
-Booth&amp;Bottle Website
+# BOOTH AND BOTTLE -- WEBSITE DESIGN
+
+Booth&amp;Bottle Website Repo
+
+----------------------------------------------

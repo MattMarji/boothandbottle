@@ -1,0 +1,308 @@
+*
+{
+	padding:0;
+	margin:0;
+	outline:0;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue.otf');
+}
+
+html 
+{
+    background-color: #fffff;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.body_background
+{
+    background-color: #fffff;
+}
+
+img#logo
+{
+    margin-top: 120px;
+}
+
+.middle
+{
+    text-align: center;
+}
+
+.image_logo
+{
+    width:30%;
+    height:30%;
+}
+
+hr
+{
+    width: 60%;
+    height:1px;
+    border:none;
+    color:#e0e0e0;
+    background-color:#e0e0e0;
+    width:60%;
+    text-align:center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.first_field
+{
+    width:210px!important;
+    margin:0 16px 0 0px;
+}
+
+.last_field
+{
+    width:395px!important;
+}
+
+.second_field
+{
+    width:295px!important;
+}
+
+.input_field
+{
+    height:48px;
+    border:1px solid #e7eaee;
+    padding:0px 19px!important;
+    border-radius:5px;
+    font-family: 'BebasNeue';
+    font-weight:bold;
+    color:#212425;
+    font-size:18px;
+}
+
+.btn-success, .btn-success:hover {
+  color: #fff;
+  background-color: #0053ff;
+  border-color: #4cae4c;
+}
+
+.logo_text
+{
+    align-content: center;
+    font-family:'BebasNeue';
+    font-size: 30px;
+}
+
+.modal_title_font
+{
+    font-family:'BebasNeue';
+    font-size: 30px;
+    font-stretch:extra-expanded;
+}
+
+.modal_btn_font
+{
+    font-family:'BebasNeue';
+    font-size: 20px;
+    font-stretch:extra-expanded;
+}
+
+.special_font
+{
+    font-family:'BebasNeue';
+}
+
+.social_small
+{
+    width:5%;
+    height:5%;
+}
+
+.social_large
+{
+    width:8%;
+    height:8%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+.centered-info{
+    margin-top: 60px;
+}
+
+.centered-info .panel{
+    background: rgba(255, 255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+.img-transition {
+    -webkit-animation: fadein 3.5s; /* Safari and Chrome */
+    -moz-animation: fadein 3.5s; /* Firefox */
+    -ms-animation: fadein 3.5s; /* Internet Explorer */
+    -o-animation: fadein 3.5s; /* Opera */
+    animation: fadein 3.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+/*================================Responsive Design=====================================*/
+
+
+@media only screen and (min-width:100px) and (max-width: 478px) {
+
+.social_small
+{
+    width:12%;
+    height:12%;
+}
+
+.social_large
+{
+    width:18%;
+    height:18%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
+
+}
+
+@media only screen and (max-width: 479px) {
+
+.social_small
+{
+    width:12%;
+    height:12%;
+}
+
+.social_large
+{
+    width:18%;
+    height:18%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px), only screen and (min-device-width: 480px) and (max-device-width: 767px){
+
+    .social_small
+{
+    width:12%;
+    height:12%;
+}
+
+.social_large
+{
+    width:18%;
+    height:18%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+
+    .social_small
+{
+    width:12%;
+    height:12%;
+}
+
+.social_large
+{
+    width:18%;
+    height:18%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1119px){
+
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
+
+}
+
+@media only screen and (min-width: 1120px) {
+
+.image_logo
+{
+    width:40%;
+    height:40%;
+}
+
+}
+
+
+
