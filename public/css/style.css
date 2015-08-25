@@ -10,6 +10,13 @@
     src: url('fonts/BebasNeue.otf');
 }
 
+html 
+{
+    background-color: #fffff;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
 .body_background
 {
     background-color: #fffff;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <script type="text/javascript" src="js/countdown.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,7 +25,7 @@
 
 </head>
 
-<body class="body_background" id="body_background">
+<body id="body_background">
 
     <div id="logo" class="middle">
         <!-- This div will host the logo. -->
@@ -32,9 +33,32 @@
     </div>
 
     <div id="logo_text" class="middle">
-        <h3 class="logo_text" id="slogan">Choose your venue. Reserve your booth.</br>Get back to the party.</br></br>Android & iOS app.</br>Coming May 2015.</h3>
+        <h3 class="logo_text" id="slogan">EXPLORE. RESERVE. UNLOCK.</br></h3>
     </div>
 
+    <br/>
+
+    <div align="center" valign="middle">
+        <h1 class="logo_text">COMING SOON TO ANDROID AND iOS</h1>
+    <script>  
+        var myCountdownTest = new Countdown({
+                                            year    : 2015,
+                                            month   : 9, 
+                                            day     : 8,
+                                            width   : 500, 
+                                            height  : 100,
+                                            rangeHi : "day"
+                                            });
+
+    </script>
+        <h1 class="logo_text">SIGN UP TO GET NOTIFIED THE SECOND WE LAUNCH!</h1>
+        <form role="form" id="email_form_body">
+            <div class="form-group">
+                <input type="email" name="email" value="" id="signup_email" class="input-sm" style="width: 300px;"placeholder="Email Address" novalidate>
+                <input type="submit" id="signup_form_button" value="SUBMIT" class="btn btn-info">
+            </div>
+        </form>
+    </div>
 
     <hr>
 
@@ -256,6 +280,27 @@
                             <div class="panel-body middle">
                                 <img style="width:150px; height:150px;" src="images/boothandbottle_logo.jpg" alt="booth and bottle"></a>
                                 <h3 class="special_font">We will be in contact with you soon!</h3>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade active" id="signupModal" role="dialog" aria-hidden="true">
+    <div class="container">
+        <div class="row centered-info">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                        <h2 class="panel-title modal_title_font middle" id="form_modal_title">Thanks for signing up!</h2>
+                        </div>
+                            <div class="panel-body middle">
+                                <img style="width:150px; height:150px;" src="images/boothandbottle_logo.jpg" alt="booth and bottle"></a>
+                                <h3 class="special_font">You won't regret it! We can't wait for you to try out our app. Get ready to unlock your city and all that nightlife has to offer.</h3>
                             </div>
 
                         </form>

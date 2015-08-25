@@ -97,6 +97,28 @@
       event.preventDefault();
       return show_form("EMAIL");
     });
+    $('#email_form_body').on('submit', function(event) {
+      var email_address, isValidEmail, re;
+      event.preventDefault();
+      email_address = $('#email_form_body').find('#signup_email').val();
+      console.log(email_address);
+      re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      isValidEmail = re.test(email_address);
+      if (!isValidEmail) {
+        return;
+      }
+      console.log("VALID EMAIL!!");
+      return $.ajax({
+        type: "GET",
+        url: 'scripts/send_signup_form.php',
+        data: {
+          client_email: email_address
+        },
+        success: function() {
+          return $('#signupModal').modal('show');
+        }
+      });
+    });
     $('#formModal').on('submit', function(event) {
       var email_address, isValid, message, name, phone_number, venue;
       event.preventDefault();
@@ -128,9 +150,14 @@
     $('#formModal').on('hidden.bs.modal', function(event) {
       return $('#formModal').find('#form_body')[0].reset();
     });
-    return $('#infoModal').on('show.bs.modal', function(event) {
+    $('#infoModal').on('show.bs.modal', function(event) {
       return setTimeout((function() {
         return $('#infoModal').modal('hide');
+      }), 3000);
+    });
+    return $('#signupModal').on('show.bs.modal', function(event) {
+      return setTimeout((function() {
+        return $('#signupModal').modal('hide');
       }), 3000);
     });
   });

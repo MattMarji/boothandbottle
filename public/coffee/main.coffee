@@ -140,6 +140,31 @@ $(document).ready(() ->
 
 
   ######## EVENT HANDLER FOR FORM SUBMIT #######
+  $('#email_form_body').on('submit', (event) ->
+
+    event.preventDefault()
+    email_address = $('#email_form_body').find('#signup_email').val()
+    console.log(email_address)
+
+    re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+    isValidEmail = re.test(email_address)
+
+    if (!isValidEmail)
+      return
+
+    console.log("VALID EMAIL!!")
+
+    $.ajax({
+      type: "GET"
+      url: 'scripts/send_signup_form.php'
+      data:
+        client_email: email_address
+      success: () ->
+        # Show success modal
+        $('#signupModal').modal('show')
+    })
+  )
 
   $('#formModal').on('submit', (event) ->
 
@@ -185,6 +210,13 @@ $(document).ready(() ->
   $('#infoModal').on('show.bs.modal', (event) ->
     setTimeout((() ->
       $('#infoModal').modal('hide')), 3000)
+  )
+  #######################################################
+
+   ##### EVENT HANDLER FOR HIDING SIGNUP MODAL ON TIMEOUT ###
+  $('#signupModal').on('show.bs.modal', (event) ->
+    setTimeout((() ->
+      $('#signupModal').modal('hide')), 3000)
   )
   #######################################################
 
