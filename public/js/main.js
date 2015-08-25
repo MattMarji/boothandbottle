@@ -5,7 +5,7 @@
   show_form = function(custom_title) {
     if (custom_title === "EMAIL") {
       $('#formModal').find('#form_modal_title').text("Contact Us");
-      $('#formModal').find('#form_info').html("Have an inquiry? <br>Want your venue on Booth&Bottle? <br>sLet's Chat!");
+      $('#formModal').find('#form_info').html("Have an inquiry? <br>Want your venue on Booth&Bottle? <br>Let's Chat!");
       $('#formModal').find('#form_button').prop("value", "Send Message");
     } else {
       $('#formModal').find('#form_modal_title').text("Book @ " + custom_title);
